@@ -105,7 +105,7 @@ public class BasketballController : MonoBehaviour
     IEnumerator ResetBallPosition()
     {
         yield return new WaitForSeconds(2);   // 等待2秒
-        Ball.position = initialBallPosition; // 將球重置到初始位置
+        Ball.position = transform.position; // 將球重置到球員的當前位置
         Ball.GetComponent<Rigidbody>().isKinematic = true; // 使球變為運動學的，這樣它不會因物理原因而掉下
         IsBallInHands = true;
     }
