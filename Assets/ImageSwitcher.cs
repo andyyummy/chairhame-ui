@@ -34,7 +34,7 @@ public class ImageSwitcher : MonoBehaviour, IPointerClickHandler
         else if (imgComponent.sprite == image3)
         {
             // 載入 "Scene_投籃" 場景
-            SceneManager.LoadScene("Scene_投籃");
+            SceneManager.LoadScene("Scene_關卡一_投籃");
         }
     }
 }

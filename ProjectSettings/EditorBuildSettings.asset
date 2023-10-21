@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/HandGrab.unity
     guid: 1ca1035b12c67f24d81e7bc5ad627d76
   - enabled: 1
-    path: "Assets/Scenes/\u5927\u5EF3.unity"
+    path: "Assets/Scenes/Scene_\u5927\u5EF3.unity"
     guid: f9923a71670517246be800c064cd6aad
   - enabled: 1
-    path: "Assets/Scenes/Scene_\u6295\u7C43.unity"
+    path: "Assets/Scenes/Scene_\u95DC\u5361\u4E00_\u6295\u7C43.unity"
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e2c8c02162c868c418856e4a11ffa897, type: 2}
