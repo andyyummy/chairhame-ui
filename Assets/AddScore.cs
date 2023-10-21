@@ -10,7 +10,6 @@ public class AddScore : MonoBehaviour
 
     private void Start()
     {
-
         if (_scoreManager == null)
         {
             _scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
@@ -30,7 +29,16 @@ public class AddScore : MonoBehaviour
         {
             print(message: "+1");
             _scoreManager.AddScore();
-            Destroy(gameObject);
+
+            gameObject.SetActive(false);
+
+            Invoke("RespawnObject", 2f);
         }
+    }
+
+    void RespawnObject()
+    {
+        transform.position = _initialPosition;
+        gameObject.SetActive(true);
     }
 }
